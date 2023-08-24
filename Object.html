@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      myStr = "hello worlds";
+      //1
+      //   function printDiffChar(string) {
+      //     for (var i = 0; i < string.length; i++) {
+      //       console.log(string.charAt(i));
+      //     }
+      //   }
+      //   printDiffChar("hello");
+      //2
+      // function addIndexAfterEachChar(ArgomentString){
+      //     var newString=""
+      //     for(var i=0;i<ArgomentString.length;i++){
+      //        newString = newString+ (ArgomentString.charAt(i)+ ""+i)
+      //     }
+      //     return newString;
+      // }
+      // console.log(addIndexAfterEachChar("hi there"));
+      //3
+      //   function switchEvenIndexTo2(str) {
+      //     var tempStr=""
+      //     for(var i=0;i<str.length;i++){
+      //      if(i%2==0){
+      //         tempStr=tempStr +2
+      //      }
+      //      else{
+      //         tempStr=tempStr+str[i]
+      //      }
+
+      //     }
+      //     return tempStr;
+      //   }
+      //   console.log(switchEvenIndexTo2(myStr));
+      //4
+      //       function ifFirstNameFirstDigIsAPrintHello(){
+      // firstName=prompt("Enter name")
+      //         if(firstName[0]=="A"){
+      //             return console.log("hello");
+      //         }
+      // return console.log("bye");
+      //       }
+      //       ifFirstNameFirstDigIsAPrintHello("Ads")
+      //5
+      //   function ifLastNameLastDigIsEPrintYes(lastName) {
+      //   lastName=prompt("Enter name")
+      //     if (lastName[lastName.length - 1] == "E") {
+      //       return console.log("yes");
+      //     }
+      //     return console.log("no");
+      //   }
+      //   ifLastNameLastDigIsEPrintYes("sdsdE");
+      //6
+      //   function upperCaseString(str){
+      //     return str.toUpperCase()
+      //   }
+      //  console.log(upperCaseString(myStr));
+      //7 USED HELP
+      //   var numberStr = "123,23311,314,44,5,6,7";
+      //   function spaceNumbers(numStr) {
+      //     var arr = [];
+      //     var j = 0;
+      //     for (var i = 0; i < numStr.length; i++) {
+      //       if (numStr[i] === ",") {
+      //         arr.push(parseInt(numStr.substring(j, i)));
+      //         j = 1 + i;
+      //       }
+      //     }
+      //     arr.push(parseInt(numStr.substring(j, i)));
+      //     return arr;
+      //   }
+      //   console.log(spaceNumbers(numberStr));
+      //8
+      //   function randomNum1To10() {
+      //     return Math.floor(Math.random() * 10 + 1);
+      //   }
+      //   console.log(randomNum1To10());
+      //9
+      // function getRandomNumByNumberGotten(num){
+      //     return Math.floor(Math.random() * (num+1) );
+      // }
+      // console.log(getRandomNumByNumberGotten(4));
+      //10
+      // function guessingGame1Too10(){
+      //     var num=+prompt("Enter a number")
+      //     if(num==Math.floor(Math.random()*11 )){
+      //         return console.log("You won!");
+      //     }
+      //     return console.log("You lost :(");
+      // }
+      // guessingGame1Too10()
+      //11
+      // function randomArray(){
+      //     var arr=[];
+      //     for(var i=0;i<10;i++){
+      //         arr[i]=(Math.floor(Math.random()*101))
+      //     }
+      //     return arr
+      // }
+      // console.log(randomArray());
+      //12
+      //     function printBiggerNumber(){
+      //         num=+prompt("Enter num")
+      //         randNum=Math.floor(Math.random()*11)
+      //         if(randNum>num){
+      //            return console.log(randNum);
+      //         }
+      //         return console.log(num);
+      //     }
+      // //13
+      // function printLowestNum(){
+      //     console.log(Math.min(+prompt("Enter number"),+prompt("Enter number"),+prompt("Enter number"),+prompt("Enter number"),+prompt("Enter number")));
+      // }
+      // printLowestNum()
+      //14
+      //   function checkWhoIsBiggerPrintIfUserNumEven() {
+      //     var userNum = +prompt("Enter num");
+      //     randNum = Math.floor(Math.random() * 101);
+      //     if(userNum%2==0){
+      //        return console.log(Math.min(userNum,randNum));
+      //     }
+      //     return console.log(Math.max(userNum,randNum));
+      //   }
+      //   checkWhoIsBiggerPrintIfUserNumEven()
+      //15
+      //   function randomArray364() {
+      //     arr = [];
+      //     arrayLength =Math.floor(Math.random() * 365);
+      //     for (var i = 0; i < arrayLength; i++) {
+      //       arr[i]= Math.floor(Math.random()*874);
+      //     }
+      //     return arr
+      //   }
+      //   console.log(randomArray364());
+      //16
+      //   function printRandIndex(arr) {
+      //     i = Math.floor(Math.random() * arr.length);
+      //     return arr[i];
+      //   }
+      //   console.log(printRandIndex([12, 19, 4, 651, 65, 4, 9842, 5]));
+      //17
+      //   function capialRandomIndex(name) {
+      //     i = Math.floor(Math.random() * name.length);
+      //     var newString;
+      //     newString = name.replace(name.charAt(i), name.charAt(i).toUpperCase());
+      //     return console.log(newString);
+      //   }
+      //   capialRandomIndex("ofek");
+      //18
+      //   function ageAndNames() {
+      //     var name1 = prompt("Enter first name");
+      //     var name2 = prompt("Enter second name");
+      //     var age1 = +prompt("Enter first age");
+      //     var age2 = prompt("Enter second age");
+      //     var randNum = Math.floor(Math.random() * 101);
+      //     if (
+      //       name1[0] !== name2[0] &&
+      //       name1[name1.length - 1] !== name2[name2.length - 1]
+      //     ) {
+      //       return console.log(age1 + " " + age2);
+      //     }
+      //     if (name1[0] === name2[0]) {
+      //       console.log(randNum);
+      //     }
+      //     if (name1[name1.length - 1] === name2[name2.length - 1]) {
+      //       console.log(name1[name1.length - 1]);
+      //     }
+      //   }
+      //   ageAndNames();
+      //19
+      // function printRandNumIndex(){
+      //     var randNum = Math.floor(Math.random() * 6)
+      //     userString=prompt("Enter text")
+      //     console.log(userString.substring(0,randNum));
+      // }
+      // printRandNumIndex()
+      //20
+      // function printUserAndRandNum(){
+      //     userNum=+prompt("Enter number")
+      //     var randNum = Math.floor(Math.random() *(userNum+1))
+      //     if(randNum%3==0){
+      //         for(var i=0;i<randNum;i++){
+      //             console.log(randNum);
+      //         }
+      //     }
+      //     else{
+      //         console.log(randNum*Math.PI);
+      //     }
+      // }
+      // printUserAndRandNum(   )
+      //21
+      //   function printCurrentDate(){
+      //    var myDate = Date()
+      //     console.log(myDate);
+      //   }
+      //   printCurrentDate()
+      //22
+      //   function printDateGot(date) {
+      //    var myDate = date;
+      //     console.log(myDate);
+      //   }
+      //   var myDate1=Date()
+      //   printDateGot(myDate1);
+      //23
+      //   function printUserDate() {
+      //     var userDate = prompt("Enter date with this format YYYY-MM-DD");
+      //     var myDate = new Date(userDate);
+      //     console.log(myDate);
+      //   }
+      //   printUserDate();
+      //24
+      //    function printUserMonthInDate() {
+      //   var userDate = prompt("Enter date with this format YYYY-MM-DD");
+      //   var myDate = new Date(userDate);
+      //   console.log(myDate.getMonth()+1);
+      // }
+      // printUserMonthInDate();
+      //25
+      //        function printUserHourInDate() {
+      //     var userDate = prompt("Enter date with this format YYYY-MM-DD HH:MM");
+      //     var myDate = new Date(userDate);
+      //     console.log(myDate.getHours());
+      //   }
+      //   printUserHourInDate();
+      //26
+      //   function printUserYearInDate() {
+      //     var userDate = prompt("Enter date with this format YYYY-MM-DD HH:MM");
+      //     var myDate = new Date(userDate);
+      //     console.log(myDate.getFullYear());
+      //   }
+      //   printUserYearInDate();
+      //27
+      //   function printUserSecondsInDate() {
+      //     var userDate = prompt("Enter date with this format YYYY-MM-DD HH:MM");
+      //     var myDate = new Date(userDate);
+      //     console.log(myDate.getMinutes());
+      //   }
+      //   printUserSecondsInDate();
+      //28
+      // function checkEarlyerDate(){
+      //   var userDate1=prompt("Enter date"),userDate2=prompt("Enter date 2");
+      //     var myDate1= new Date(userDate1)
+      //     var myDate2= new Date(userDate2)
+      //     if(myDate1<myDate2)
+      //     {return myDate1 }
+      //     return myDate2
+      // }
+      // console.log(checkEarlyerDate())
+      //29
+      //   function getUserAge() {
+      //     var userDate = prompt("Enter birth Date. YYYY-MM-DD");
+      //     var myDate = new Date(userDate);
+      //     var currentDate= new Date()
+      //     var age=0;
+      //     age=currentDate.getFullYear() - myDate.getFullYear();
+      //     if(currentDate.getMonth() < myDate.getMonth()||(currentDate.getMonth() == myDate.getMonth() && currentDate.getDate() < myDate.getDate()) ){
+      //         age--;
+      //     }
+      //     return age
+      //   }
+      //   console.log(getUserAge());
+      // helping function
+      function getAge(userDateRecevied) {
+        var userDate = userDateRecevied;
+        var myDate = new Date(userDate);
+        var currentDate = new Date();
+        var age = 0;
+        age = currentDate.getFullYear() - myDate.getFullYear();
+        if (
+          currentDate.getMonth() < myDate.getMonth() ||
+          (currentDate.getMonth() == myDate.getMonth() &&
+            currentDate.getDate() < myDate.getDate())
+        ) {
+          age--;
+        }
+        return age;
+      }
+      //30
+      //   function ifAgeAbove18Enter(){
+      //     var userBirthDate=prompt("Enter birth date YYYY-MM-DD");
+      //     if(getAge(userBirthDate)>=18){
+      //         return alert("You may enter the site")
+      //     }
+      //     return alert("Not allowed to enter")
+      //   }
+      //   ifAgeAbove18Enter()
+      //31
+      //     function getUserLocation(){
+      //       var  myDate= new Date();
+      // return myDate.toDateString(locales,Options)
+      //     }
+      //    console.log(getUserLocation());
+      //32
+      //   function makeRandomDate(){
+      //     var randYear ="" + (Math.floor(Math.random()*33 + 1990))
+      //     var randMonth ="" +Math.floor(Math.random()*13 +1)
+      //     var randDay ="" +Math.floor(Math.random()*32 +1)
+
+      //     var newDate= new Date(randMonth ,randDay ,randYear)
+      //     console.log(newDate);
+      //   }
+      //   makeRandomDate()
+      //33
+      //   var myString = "door:100000,keys:v1l,keysss:valss";
+      //   function getValueLength(str) {
+      //     var funcString = "";
+      //     var startIndex = 0;
+      //     var comaIndex = str.indexOf(","),
+      //       dotsIndex;
+      //     var longestStr = "";
+      //     var tempStr = "";
+      //     while (comaIndex != -1) {
+      //       funcString = str.substring(startIndex, comaIndex);
+      //       dotsIndex = funcString.indexOf(":");
+      //       tempStr = funcString.substring(dotsIndex + 1);
+      //       if (tempStr.length > longestStr.length) {
+      //         longestStr = tempStr;
+      //       }
+      //       startIndex = comaIndex + 1;
+      //       comaIndex = str.indexOf(",", startIndex);
+      //     }
+      //     funcString = str.substring(startIndex);
+      //     dotsIndex = funcString.indexOf(":");
+      //     tempStr = funcString.substring(dotsIndex + 1);
+      //     if (tempStr.length > longestStr.length) {
+      //         longestStr = tempStr;
+      //       }
+      //       return console.log(longestStr);
+      //   }
+      //   getValueLength(myString)
+      //34
+      //35
+      //36
+      //37
+      //38
+      //   function checkIfStringLongOrShort(str){
+      //     if(str.length>5){
+      //         return console.log("long");
+      //     }
+      //     return console.log("short");
+      //   }
+      //   checkIfStringLongOrShort("sdfhad")
+      //39
+      //   function checkIfaInString(str){
+      //     if(str.indexOf("a")==-1){
+      //         return console.log("Not found");
+      //     }
+      //     return str.indexOf("a")
+      //   }
+      //40
+      //   function checkIfrInString(str){
+      //     if(str.indexOf("r")==-1){
+      //         return false;
+      //     }
+      //     return true
+      //   }
+      //41
+      //   function checkIfCharInString(str, char) {
+      //     if (str.indexOf(char) == -1) {
+      //       return false;
+      //     }
+      //     return true;
+      //   }
+      //   console.log(checkIfCharInString("ofeks", "b"));
+      //42
+      //   function checkAndPrintCharIfInString(str, char) {
+      //     if (checkIfCharInString(str, char)) {
+      //       return console.log(
+      //         "the index of the char is " + str.lastIndexOf(char)
+      //       );
+      //     }
+      //     return console.log("the char is not in the string");
+      //   }
+      //   checkAndPrintCharIfInString("ofek","e");
+      //43+44
+      //   function get3FirstChar() {
+      //     var str = "sayonara";
+      //     return str.substr(0, 3);
+      //   }
+      //   console.log(get3FirstChar());
+      //45
+      // function get4CharFromY() {
+      //   var str = "sayonara";
+      //     var yIndex=str.indexOf("y")
+      //   return str.substr(yIndex, 4);
+      // }
+      // console.log(get4CharFromY());
+      //46
+      //   function getAllCharFromO() {
+      //     var str = "sayonara";
+      //     var yIndex = str.indexOf("o");
+      //     return str.substr(yIndex);
+      //   }
+      //   console.log(getAllCharFromO());
+      //47+48
+      // function checkIfIndexBiggerThenArrLength(str,index){
+      //     if(str.length<index){
+      //         return console.log("The index is bigger then the string length");
+      //     }
+      //     return str.substr(index)
+      // }
+      // console.log(checkIfIndexBiggerThenArrLength("ofek",1));
+      //49+50
+      //   function ifIndexIsGoodPrintFromIndex3Places(str, index) {
+      //     if (str.length < index) {
+      //       return console.log("The index is bigger then the string length");
+      //     }
+      //     return str.substr(index,3)
+      //   }
+      //   console.log(ifIndexIsGoodPrintFromIndex3Places("ofedfcfgck",2));
+      //51
+      //   function printStringBetweenNumbers(str, index1, index2) {
+      //     if (index1 / 1 != index1 || index2 / 1 != index2) {
+      //       return console.log("Enter numbers please");
+      //     }
+      //     return str.substring(index1, index2);
+      //   }
+      //   console.log(printStringBetweenNumbers("abcdefhi", 4, 0));
+      //51 DID IT
+      //52 DID IT
+      //53 DID IT
+      //54 DID IT
+    </script>
+  </body>
+</html>

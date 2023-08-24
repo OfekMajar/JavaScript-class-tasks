@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array</title>
+  </head>
+  <body>
+    <script>
+      //   var colorsArr=["Red","White","Blue","Gray","Green"];
+      //   console.log(colorsArr[0]);
+      var studentsArr = ["Ramin", "Daviv", "Sagi", "Ofek", "Nitzan"];
+      //   console.log(studentsArr[4]);
+      //   var animalsArr=["Bear","Monkey","Dog","Cat","Bird"];
+      //   console.log(animalsArr[2]);
+      //   var citysArry = ["Tel-aviv", "Rishon-Le-Zion", "Ramat-Gan", "Holon", "Bat-Yam"];
+      //   console.log(citysArry[1]);
+
+      //   function changeColor(color){
+      //     if(colorsArr[2]=="Blue"){
+      //         colorsArr[2]=color;
+      //     }
+
+      //   }
+      //   changeColor("black")
+      //   console.log(colorsArr);
+
+      var yearsArr = [1990, 1995, 2000, 2010, 2015];
+      function yearsPrinter() {
+        for (var i = 0; i < yearsArr.length; i++) {
+          console.log(yearsArr[i]);
+        }
+      }
+      //   yearsPrinter();
+      function printYearsBiggerThen1999() {
+        for (var i = 0; i < yearsArr.length; i++) {
+          if (yearsArr[i] > 1999) {
+            console.log(yearsArr[i]);
+          }
+        }
+      }
+      //   printYearsBiggerThen1999()
+
+      function CheckIfNameInArray(name) {
+        for (var i = 0; i < studentsArr.length; i++) {
+          if (studentsArr[i] == name) {
+            console.log("The name does exist");
+            return;
+          }
+        }
+        console.log("the name does not exist");
+      }
+
+      //   CheckIfNameInArray("Ofek");
+
+      function checkIfParmIsInArray(Array, param) {
+        for (var i = 0; i < Array.length; i++) {
+          if (Array[i] === param) {
+            return console.log("The parm is in the array");
+          }
+        }
+        console.log("the parm is not in the array");
+      }
+      // checkIfParmIsInArray(yearsArr,2000)
+
+      //   function makeAndPrintAnArray() {
+      //     var arraySize = +prompt("Enter the array size");
+      //     var newArray = [];
+      //     for (var i = 0; i < arraySize; i++) {
+      //       newArray[i] = +prompt("Enter any number you want");
+      //     }
+      //     console.log(newArray);
+      //   }
+      //   makeAndPrintAnArray();
+
+      function makeArrayAsLongUnder10() {
+        var newArray = [];
+        var i = 0;
+        var userNumber = +prompt("Enter a number");
+
+        while (userNumber >= 10) {
+          newArray[i] = userNumber;
+          userNumber = +prompt("Enter a number");
+          i++;
+        }
+        return console.log(newArray);
+      }
+    //   makeArrayAsLongUnder10();
+    
+
+    </script>
+  </body>
+</html>

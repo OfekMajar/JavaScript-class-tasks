@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function</title>
+  </head>
+  <body>
+    <script>
+      // function printHelloWorld(){
+      //     Console.log("Hello World");
+      // }
+      
+      // function myName(){
+      //     console.log("Ofek")
+      // }
+
+      //M3
+      // function getMyName(){
+      //     return "Ofek"
+      // }
+      //M4
+
+      // function getSum(){
+      //     return (3+7)
+      // }
+
+      //M5
+      // function getSum2(){
+      //     var num1=6,num2=4;
+      //     return (num1+num2)
+      // }
+      //M6
+      function getSum(num1, num2) {
+        return num1 + num2;
+      }
+
+      //M7
+      // function getMultipication(num1,num2){
+      //     return(num1*num2)
+      // }
+
+      //M8
+      // function subtractSmallestNum(num1,num2){
+      // if(num1>num2){
+      //     return (num1-num2)
+      // }
+      // else{
+      //     return(num2-num1)
+      // }
+      // }
+
+      //M9
+      // function divideNumbers(num1,num2){
+      // if(num1<num2){
+      //     return (num2/num1)
+      // }
+      // else{
+      //     return(num1/num2)
+      // }
+      // }
+
+      //M10
+      // function getUserSum()
+      // {
+      //     var num1= +prompt("enter number")
+      //     var num2= +prompt("enter number")
+
+      //     return (getSum(num1,num2))
+      // }
+      // var numbers= getUserSum();
+      // console.log(numbers)
+
+      //M11
+      // function nameAndAge(){
+      //     console.log("name is "+ prompt("enter name ") +"Age is " + +prompt("Enter age"))
+
+      // }
+      // nameAndAge()
+      // nameAndAge()
+
+      //M12 BIGGER NUMBER
+      // function biggerNumber(num1,num2)
+      // {
+      //     if(num1 >= num2){
+      //         return num1;
+      //     }
+      //     return num2;
+      // }
+      // console.log(biggerNumber(43,12))
+
+      //M13
+      //USED M6!
+      // console.log(getSum(23,235))
+
+      //M14
+      // function addingToNum(num){
+      // var sum=num
+      // for(var i=1;i<num;i++){
+      //     sum=sum+i;
+      // }
+      // return sum
+      // }
+      // console.log(addingToNum(3));
+      //   var c = "bye",
+      //     d = "hi";
+
+      //M15
+      //   function switchPlaces() {
+      //     var switchingVar = c;
+      //     c = d;
+      //     d = switchingVar;
+      //   }
+      //   switchPlaces(c, d);
+      //   console.log(c + " " + d);
+
+      //M16
+      // function makeSpace(num,letter){
+      //     var spacer=letter
+      //     for(var i=0;i<num;i++)
+      //     {
+      //         spacer = spacer + letter}
+      //         return spacer
+      // }
+      // function triangleMaker(sideSize){
+      //     for(var i=0;i<sideSize;i++){
+      //         if(i==0){
+      //             console.log("*");
+      //         }
+      //         else if(i<sideSize-1){
+      //             console.log("*" + makeSpace(i," ") +"*");
+      //         }
+
+      //         else{console.log(makeSpace(i,"* "))}
+      //     }
+      // }
+      // triangleMaker(4)
+
+      //M17
+      //     function printHello(){
+      //           console.log("Hello");
+      //       }
+      // for(var i=0;i<5;i++){
+      //     printHello()
+      // }
+      //M18
+      //  function smallerNumber(num1,num2)
+      //       {
+      //           if(num1 >= num2){
+      //               return num2;
+      //           }
+      //           return num1;
+      //       }
+      //       console.log(smallerNumber(43,12))
+
+      //JUST USING IT DON'T NEED FOR MISSIONS
+      //    function smallestNumber(num1,num2,num3)
+      //   {
+      //     var maxNum=num1,minNum=num1;
+      //       if(num2>=maxNum){
+      //         maxNum=num2
+      //       }else if(num2<=minNum){
+      //         minNum=num2;
+      //       }
+      //       if(num3>=maxNum){
+      //         maxNum=num3
+      //       }else if(num3<=minNum){
+      //         minNum=num3;
+      //       }
+
+      //   }
+      //   console.log(smallerNumber(43,12))
+
+      //M19
+      //     function smallestNumber(num1,num2,num3)
+      //   {
+      //     var minNum=num1;
+      //       if(num2<=minNum){
+      //         minNum=num2;
+      //       }
+      //     if(num3<=minNum){
+      //         minNum=num3;
+      //       }
+      //       return minNum;
+
+      //   }
+      //   console.log(smallestNumber(43,1242,243))
+
+      //M20
+      //   function threeNumAvg(num1,num2,num3){
+      //     return ((num1+num2+num3)/3)
+      //   }
+      //   console.log("the avg is " + threeNumAvg(12,58,3))
+
+      //M21
+      // function sumFourNumber(num1,num2,num3,num4){
+      //     return getSum(getSum(num1,num2), getSum(num3,num4))
+      // }
+      // console.log(sumFourNumber(2,2,3,3));
+
+      //M22
+      // function powerNumer(base ,exponent){
+      //     var sum=1
+      //     for(var i=0;i<exponent;i++){
+      // sum=sum*base
+      //     }
+      //     return sum
+      // }
+      // console.log(powerNumer(3,6));
+      //
+
+      //M23 GETBACK                         GET BACK
+      // function getNumberDigitSum(num){
+      //   var sum=0;
+      //   num=num.toString()
+      //   for(var i=0;i<num.length;i++){
+      // sum=sum+ num.charAt[i];
+      //   }
+      //   sum=sum.toFixed()
+      //   console.log(sum);
+      // }
+      // getNumberDigitSum(123)
+
+      //M23 with %
+      var num1=5329;
+      var sum=0;
+      
+
+      //M24
+      // function fibonazi(number){
+      //     prevNum=0
+      //     sum=1
+      //     num1=1
+      //     for(var i=1;i<=number;i++){
+      //         console.log(sum);
+      //         sum=num1+prevNum
+      //         prevNum=num1
+      //         num1=sum
+      //     }
+      // }
+      // fibonazi(8)
+
+      //M25
+      // function oneToHundred (){
+      //     for(var i=1;i<=100;i++){
+      //         console.log(i);
+      //     }
+      // }
+      // oneToHundred()
+      //M26
+
+      //M27
+      // function textTimesAboveTenHello(times){
+      // if(times<=10)
+      // return console.log(times)
+      // for(var i=0; i<times;i++){
+      //     console.log("hello world");
+      // }
+      // return
+      // }
+      // textTimesAboveTenHello(13)
+
+      //M28
+      // function textTimesAboveTen(text,times){
+      // for(var i=0; i<times;i++){
+      //     console.log(text);
+      // }
+      // return
+      // }
+      // textTimesAboveTen(prompt("enter text"),+prompt("Number of time to see the text"))
+
+      //M29
+      // function fiveNumAvg(){
+      // sum=0
+      // for(var i=0;i<5;i++){
+      //   sum = sum + +prompt("Enter number");
+      // }
+      // return console.log("The average is " + (sum/5));
+      // }
+      // fiveNumAvg()
+      //
+
+      //M30
+      // function oneToFiftyEven() {
+      //   for (var i = 1; i < 50; i++) {
+      //     i++;
+      //     console.log(i);
+      //   }
+      // }
+
+      //M31
+      // function evenOrOddPrintFiftys(num) {
+      //   if (num % 2 == 0) {
+      //     oneToFiftyEven();
+      //   }
+      //   else{
+      //     for (var i = 1; i < 49; i++) {
+      //       i = i + 2;
+      //       console.log(i);
+      //     }
+      //   }
+      // }
+      // evenOrOddPrintFiftys(2)
+
+      //M32(
+      // function divisibleNumber(num){
+      //   for(var i=1;i<=num;i++){
+      //     if(num%i==0){
+      //       console.log(i)
+      //     }
+
+      //   }
+      // }
+      // divisibleNumber(20)
+
+      //M33
+      // function factorial(num) {
+      //   var sum = 1;
+
+      //   for (var i = 1; i <= num; i++) {
+      //     sum = sum * i;
+      //   }
+      //   return sum
+      // }
+
+      //    M34
+      // function returnNameAsLongNotText(name,text){
+      //   if(name==text){
+      //     return
+      //   }
+      //   console.log(name);
+      // }
+
+      //M35
+      // function tenCounterWriter(){
+      //    var num
+      // while(counter<10){
+      // num=+prompt("Enter num")
+      // if(num>10)
+      // {
+      //     console.log("yes");
+      // }else if(num <10){
+      // console.log("no");
+      // counter++
+      // }else console.log("even")
+      // }
+      // }
+
+      //M36
+      // function smallestBiggestNumber(){
+      //   var biggest , smallest , num
+      // num=+prompt("enter number");
+      //    biggest=num, smallest=num;
+      //   for(var i=0;i<4;i++){
+      //     num=+prompt("enter number");
+
+      //     if (num>biggest){
+      //         biggest=num
+      //     }
+      //     if(num< smallest){
+      //         smallest=num
+      //     }
+      // }
+      // console.log("the max num is " + biggest + " the min num is "+ smallest)
+      // }
+
+      // smallestBiggestNumber()
+
+      //M37
+      //     function textNotStartingWithA(){
+      //      var text=prompt("enter name")
+      //      var firstChar = text[0]
+      //      if(firstChar=="A" ){ return }
+      //     for(var i=0;i<10;i--){
+      //     console.log(text)
+      //     text=prompt("enter a name")
+      // var firstChar = text[0]
+      //              if(firstChar=="A"){
+      //               i=100
+      //              }
+      //            }
+      //        }
+
+      //   M38
+      // function textNotStartingWithAa(){
+      //   var text=prompt("enter name")
+      //    var firstChar = text[0]
+      //    if(firstChar=="A" ){ return }
+      //            if(firstChar=="a")  {return}
+      //    for(var i=0;i<10;i--){
+      //     console.log(text)
+      //     text=prompt("enter a name")
+      //            var firstChar = text[0]
+      //            if(firstChar=="A" ){
+      //             i=100
+      //            }
+      //            if(firstChar=="a"){i=100}
+      //              }
+      //        }
+
+      //M40
+      // function smallestBiggestNumberStopAtZero() {
+      //   var biggest, smallest, num;
+      //   num = +prompt("enter number");
+      //   if (num < 0) {
+      //     (biggest = 0), (smallest = 0);
+      //   } else {
+      //     (biggest = num), (smallest = num);
+      //   }
+      //   while (num > 0) {
+      //     num = +prompt("enter number");
+
+      //     if (num > biggest) {
+      //       biggest = num;
+      //     }
+      //     if (num < smallest && num > 0) {
+      //       smallest = num;
+      //     }
+
+      //   }
+      //   console.log(
+      //     "the max num is " + biggest + " the min num is " + smallest
+      //   );
+      // }
+      // smallestBiggestNumberStopAtZero()
+
+      //M41
+      // function printNumberDigits(){
+      //   var num=+prompt("Enter number")
+      //   var stringNum = num.toString()
+      //   for(var i=0;i<stringNum.length;i++){
+      //     console.log(parseInt(stringNum.charAt(i)))
+
+      //   }
+      // }
+      // printNumberDigits()
+
+      //M42
+      // function multipicationTable() {
+      //   for (var i = 1; i <= 10; i++) {
+      //     for (var j = 1; j <= 10; j++) {
+      //       console.log(i * j);
+      //     }
+      //   }
+      // }
+      // multipicationTable()
+
+      //M43
+      // function randomNumberGame(){
+      //       var randomNum = Math.floor(Math.random() * 100);
+      //       console.log(randomNum);
+      //       var userNum = +prompt("enter a number from 1-99 and you might get lucky");
+      //       var i = 1,
+      //         counter = 0;
+      //       const startTime = Date.now();
+      //       while (i <= 3) {
+      //         counter++;
+      //         if (userNum == randomNum) {
+      //           i = 1000;
+      //         } else if (userNum > randomNum) {
+      //           var userNum = +prompt("enter a lower number");
+      //         } else {
+      //           var userNum = +prompt("enter a higher number");
+      //         }
+      //         i--;
+      //       }
+      //       const endTime = Date.now();
+      //       const timeElapsed = (endTime - startTime) / 1000;
+      //       alert(
+      //         "Congraz you won! It took you " +
+      //           counter +
+      //           " tries and " +
+      //           timeElapsed +
+      //           " Seconds"
+      //       );
+      //     }
+      //     randomNumberGame()
+    </script>
+  </body>
+</html>

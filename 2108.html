@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //1
+      //2
+      //   var countryArr = ["Israel", "Japan", "USA", "Canada", "Brazil", "India"];
+      //   var vegArr = [
+      //     "Carrot",
+      //     "Broccoli",
+      //     "Spinach",
+      //     "Tomato",
+      //     "Pepper",
+      //     "Cauliflower",
+      //   ];
+      //   var fruitArr = [
+      //     "Apple",
+      //     "Banana",
+      //     "Orange",
+      //     "Grapes",
+      //     "Strawberry",
+      //     "Pineapple",
+      //   ];
+      //   var vehicelsArr = [
+      //     "Car",
+      //     "Bicycle",
+      //     "Bus",
+      //     "Motorcycle",
+      //     "Train",
+      //     "Airplane",
+      //   ];
+      //   var kitchenTools = [
+      //     "Knife",
+      //     "Fork",
+      //     "Blender",
+      //     "Spoon",
+      //     "bowl",
+      //     "Saucepan",
+      //   ];
+      //   //3
+      //   console.log(countryArr[1]);
+      //   console.log(vegArr[3]);
+      //   console.log(fruitArr[5]);
+      //   console.log(vehicelsArr[4]);
+      //   console.log(kitchenTools[5]);
+      //   //4
+      //   countryArr[0] = "France";
+      //   vegArr[2] = "Zucchini";
+      //   fruitArr[3] = "Mango";
+      //   vehicelsArr[1] = "Boat";
+      //   kitchenTools[5] = "Whisk";
+      //   //5
+      //   function printCountries() {
+      //     console.log(countryArr);
+      //   }
+      //   //6
+      //   function printCountriesByRows() {
+      //     for (var i = 0; i < countryArr.length; i++) {
+      //       console.log(countryArr[i]);
+      //     }
+      //   }
+      //   //  printCountriesByRows()
+      //   //7
+      //   function addToFruitArray(param) {
+      //     fruitArr.push(param);
+      //   }
+      //   //8
+      //   function checkIfFruitExists(fruit) {
+      //     for (var i = 0; i < fruitArr.length; i++) {
+      //       if (fruitArr[i] == fruit) return console.log("The fruit exists");
+      //     }
+      //     console.log("The fruit doesn't exists");
+      //   }
+      //   //9
+      //   function checkArrayLengthToKitchenArray(arr) {
+      //     if (arr.length == kitchenTools.length) {
+      //       return console.log("the arrays are the same length");
+      //     }
+      //     console.log("The arrays aren't the same length");
+      //   }
+      //   //10
+      //   function addCountryToArrIfNumBigger5(num, newCountry) {
+      //     if (num > 5) {
+      //       countryArr.push(newCountry);
+      //     }
+      //     countryArr.unshift(newCountry);
+      //   }
+      //   //11
+      //   function checkLengthAndAddParam(num, newKitTool) {
+      //     if (num > kitchenTools.length) {
+      //       kitchenTools.push(newKitTool);
+      //       console.log(kitchenTools);
+      //       return;
+      //     }
+      //     console.log("The action didn't work");
+      //   }
+      //   //12
+      //   function makeArrayByNumber(num) {
+      //     var newNumArray = [];
+      //     for (var i = 0; i <= num; i++) {
+      //       newNumArray[i] = i;
+      //     }
+      //     console.log(newNumArray);
+      //   }
+      //   //13
+      //   function makeArrayByNumberBack(num) {
+      //     var newNumArray = [];
+      //     var j = 0;
+      //     for (var i = num; i >= 0; i--) {
+      //       newNumArray[i] = j;
+      //       j++;
+      //     }
+      //     console.log(newNumArray);
+      //   }
+      //   //   makeArrayByNumberBack(4);
+      //   //   makeArrayByNumber(4);
+      //   //14
+      //   function lastNameArrMaker() {
+      //     var lastName,
+      //       lastNameArr = [];
+      //     for (var i = 0; i < 4; i++) {
+      //       lastNameArr[i] = lastName = prompt("Enter last name");
+      //     }
+      //     return lastNameArr;
+      //   }
+      //   console.log(lastNameArrMaker())
+
+      //15
+
+      //16
+      //     function addingArrNum() {
+      //   var arrAdding = [5, 3, 7, 8, 11],
+      //     sum = 0;
+      //   for (var i = 0; i < arrAdding.length; i++) {
+      //     sum = sum + arrAdding[i];
+      //   }
+      //   console.log(
+      //     "the sum is " + sum + " the avg is " + sum / arrAdding.length
+      //   );
+      //     }
+      //   addingArrNum();
+      //17
+      // var nameArr = ["Ramin", "Daviv", "Sagi", "Ofek", "Nitzan"];
+      // for (var i = 0; i < nameArr.length; i++) {
+      //   console.log(nameArr[i]);
+      // }
+      //18&19
+      // function checkIfNumInArry(arry, num) {
+      //   for (var i = 0; i < arry.length; i++) {
+      //     if ((arry[i] = num)) {
+      //       return true;
+      //     }
+      //   }
+      //   return false;
+      // }
+      //20
+      // function checkIfEven(arry) {
+      //   for (var i = 0; i < arry.length; i++) {
+      //     if (arry[i] % 2 == 0) {
+      //       console.log(arry[i]);
+      //     }
+      //   }
+      // }
+      //21&22
+      // function ifArrLengthSameSwitch(arr1, arr2) {
+      //   if (arr1.length != arr2.length) {
+      //     return false;
+      //   }
+      //   var arrSwith = arr1;
+      //   arr1 = arr2;
+      //   arr2 = arrSwith;
+      //   return true;
+      // }
+      //23 NOT WORKING
+
+      //NOT WORKING
+      function smallestNumInArr(arr) {
+        var minNum = Number.MAX_SAFE_INTEGER;
+        var pos;
+        var orderedArr = [];
+        var length = arr.length;
+        for (var j = 0; j < length; j++) {
+          for (var i = 0; i < arr.length; i++) {
+            if (arr[i] < minNum) {
+              minNum = arr[i];
+              pos = i;
+            }
+          }
+          orderedArr[j] = arr.splice(pos, 1);
+        }
+        return console.log(orderedArr);
+      }
+      smallestNumInArr([3, 2, 4, 1]);
+
+      //23&24
+      //   function smallestNumInArr(arr) {
+      //     orderedArr = arr;
+      //     orderedArr.sort((a, b) => a - b);
+      //     return orderedArr;
+      //   }
+      //   console.log(smallestNumInArr([3, 1, 5, 234, 12]));
+      //25
+      //   function maxArrayNum(arr) {
+      //     return console.log(Math.max(...arr));
+      //   }
+      //   maxArrayNum([23, 344, 2331]);
+      //26
+      //   function smallestNumIndex(arr) {
+      //     var minNum = Number.MAX_SAFE_INTEGER;
+      //     var pos;
+      //     for (var i = 0; i < arr.length; i++) {
+      //       if (arr[i] < minNum) {
+      //         minNum = arr[i];
+      //         pos = i;
+      //       }
+      //     }
+      //     return pos;
+      //   }
+      //   var arr1 = [123, 4, 2, 3];
+      //   console.log(smallestNumIndex(arr1))
+      //27
+      function sumUpArray(arr) {
+        var sum = 0;
+        for (var i = 0; i < arr.length; i++) {
+          sum = sum + arr[i];
+        }
+        return sum;
+      }
+      //28
+      //   function multiplayMinAndMaxNum(arr) {
+      //     return Math.max(...arr) * Math.min(...arr);
+      //   }
+      //   console.log(multiplayMinAndMaxNum([23, 54, 11, 2]));
+      //29
+      //   function highestEvenNumberAndHisIndex(arr) {
+      //     var maxNum = Number.MIN_SAFE_INTEGER,
+      //       pos;
+      //     for (var i = 0; i < arr.length; i++) {
+      //       if (arr[i] % 2 == 0 && arr[i] > maxNum) {
+      //         maxNum = arr[i];
+      //         pos = i;
+      //       }
+      //     }
+      //     return console.log(
+      //       "The highest even number is " + maxNum + " and his index is " + pos
+      //     );
+      //   }
+      //   highestEvenNumberAndHisIndex([32, 12314, 152, 121]);
+      //30
+      //   function sumUpOddNumbers(arr) {
+      //     sum = 0;
+      //     for (var i = 0; i < arr.length; i++) {
+      //       if (arr[i] % 2 == 1) {
+      //         sum = sum + arr[i];
+      //       }
+      //     }
+      //     return sum;
+      //   }
+      //   console.log(sumUpOddNumbers([2241, 231, 45, 33, 22]));
+      //31
+      //   function addNameToArr(arr, name) {
+      //     arr.push(name);
+      //     return arr;
+      //   }
+      //   console.log(addNameToArr(["ofs", "sddf"], "ofek"));
+      //32
+      //   function addEmailToStartOfArr(arr, email) {
+      //     arr.unshift(email);
+      //     return arr;
+      //   }
+      //   console.log(
+      //     addNameToArr(["ofekssd@sad.com", "abbd@gmail.com"], "oassd@gmail.com")
+      //   );
+      //33
+      //   function addNumberEvenOrOddStartOrEnd(arr, num) {
+      //     if (num % 2 == 0) {
+      //       arr.unshift(num);
+      //       return arr;
+      //     }
+      //     arr.push(num);
+      //     return arr;
+      //   }
+      //34
+      //   function removeOrAddNumber(arr, num) {
+      //     var checkIfExist = false;
+      //     for (var i = 0; i < arr.length; i++) {
+      //       if (arr[i] == num) {
+      //         arr.splice(i, 1);
+      //         checkIfExist = true;
+      //       }
+      //     }
+      //     if (checkIfExist == false) {
+      //       arr.push(num);
+      //     }
+      //     return arr;
+      //   }
+      //   console.log(removeOrAddNumber([22, 33, 44, 55, 66, 77], 56));
+      //35
+      //   function ifNewNumBiggerThenAddHim(arr, num) {
+      //     if (num > Math.max(...arr)) {
+      //       arr.unshift(num);
+      //       return arr;
+      //     }
+      //     arr.push(num);
+      //     return arr;
+      //   }
+      //   console.log(ifNewNumBiggerThenAddHim([22, 33, 44, 55, 66, 77], 526));
+      //36??
+      //37
+      // function checkSumWorth(arr) {
+      //   if (sumUpArray(arr) >= 13) {
+      //     return console.log("Bar-Mitzva");
+      //   }
+      //   if (sumUpArray(arr) == 12) {
+      //     return console.log("Bat-Mitzva");
+      //   }
+      //   return console.log("Kid");
+      // }
+      // checkSumWorth([2,10]);
+      //38
+      //   function ifAgeBiggerThen18PrintTwice(age, firstName, lastName, num) {
+      //     if (age > 18) {
+      //       for (var i = 0; i < num; i++) {
+      //         console.log(firstName + " " + lastName);
+      //       }
+      //       return;
+      //     }
+      //     console.log(firstName + " " + lastName);
+      //   }
+      //39
+      //   function JacobIsMadAtUs(){
+      //     for(var i=0; i<=1000;i++){
+      //         console.log("Java is not JavaScript");
+      //     }
+      //   }
+      //40
+      //   function printNamesTimesNumber() {
+      //     var name = prompt("Enter name");
+      //     var num = +prompt("Enter number of times");
+      //     for (var i = 0; i < num; i++) {
+      //       console.log(name);
+      //     }
+      //   }
+      //41
+      //   function printAgeNmaeEmail() {
+      //     console.log(prompt("Enter name")+" " + prompt("Enter email") + " "+ prompt("Enter age"));
+      //   }
+      //42
+      //   function ifMyNamePrint() {
+      //     var num = +prompt("Enter number of iterations");
+      //     var name;
+      //     for (var i = 0; i < num; i++) {
+      //       name = prompt("Enter name");
+      //       if (name == "ofek") {
+      //         console.log(name);
+      //       }
+      //     }
+      //   }
+      //   ifMyNamePrint()
+      //
+      //43
+      //   maxI = +prompt("Enter number of i");
+      //   maxJ = +prompt("Enter number of j");
+      //   for (var i = 1; i <= maxI; i++) {
+      //     for (var j = 1; j < maxJ; j++) {
+      //       console.log(i * j);
+      //     }
+      //   }
+      //44
+      //   var array44 = [1, 2, 3, 4, 5];
+      //   for (var i = 0; i < array44.length; i++) {
+      //     console.log(array44[i]);
+      //   }
+      //45
+      //    var array44 = ["name","name","name","name","name"];
+      //   for (var i = 0; i < array44.length; i++) {
+      //     console.log(array44[i]);
+      //   }
+      //46
+      //   var arr46 = [];
+      //   for (var i = 0; i < 5; i++) {
+      //     arr46[i] = prompt("Enter name");
+      //   }
+      //   console.log(arr46);
+      //47
+      //   var arr47 = [];
+      //   for (var i = 0; i < 7; i++) {
+      //     arr47[i] = +prompt("Enter number");
+      //     if (arr47[i] % 2 == 1) {
+      //       console.log(arr47[i]);
+      //     }
+      //   }
+      //48
+      // var arr48 = ["asd", 112, 1245, "hsae", "text", 126];
+      // function switchStringToNaN(arr){
+      //   for(var i=0;i<arr.length;i++){
+      //     if(arr[i]/1 != arr[i]){
+      //       arr[i]="Not a number"
+      //     }
+      //   }
+      //   return arr
+      // }
+      // console.log(switchStringToNaN(arr48));
+      //49
+      //   function makeEvenArray(){
+      //     var arr=[]
+      //     counter=0
+      //     var num
+      //     while(counter<10){
+      //         num=+prompt("Enter number")
+      //         if(num%2==0){
+      //             arr[counter]=num
+      //             counter++
+      //         }
+      //     }
+      //     return console.log(arr);
+      //   }
+      //   makeEvenArray()
+      //50
+      // function rectangleMaker(){
+      //     height=+prompt("Enter rectangle height");
+      //     width=+prompt("Enter rectangle width");
+      //     return height*width;
+      // }
+      //51
+      //   function orderOfNumbers() {
+      //     var num1 = +prompt("Enter number");
+      //     var num2 = +prompt("Enter number");
+      //     var num3 = +prompt("Enter number");
+      //     if (num1 > num2 && num2 > num3) {
+      //       return console.log("the order is declining");
+      //     }
+      //     if (num3 > num2 && num2 > num1) {
+      //       return console.log("the order is inclining");
+      //     }
+      //     return console.log("there is no order");
+      //   }
+    </script>
+  </body>
+</html>
