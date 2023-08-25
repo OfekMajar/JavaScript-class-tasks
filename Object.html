@@ -292,11 +292,12 @@
       //   }
       //   ifAgeAbove18Enter()
       //31
-      //     function getUserLocation(){
-      //       var  myDate= new Date();
-      // return myDate.toDateString(locales,Options)
-      //     }
-      //    console.log(getUserLocation());
+      // function getUserLocation() {
+      //   var myDate =  Date();
+      //   var locStr=myDate.substring(myDate.indexOf("("))
+      //   return locStr;
+      // }
+      // console.log(getUserLocation());
       //32
       //   function makeRandomDate(){
       //     var randYear ="" + (Math.floor(Math.random()*33 + 1990))
@@ -308,7 +309,7 @@
       //   }
       //   makeRandomDate()
       //33
-      var myString = "door:100000,keys:v1l,keysss:valss";
+      // var myString = "door:100000,keys:v1l,keysss:valss";
       //   function getValueLength(str) {
       //     var funcString = "";
       //     var startIndex = 0;
@@ -336,56 +337,56 @@
       //   }
       //   getValueLength(myString)
       //34
-      function getKeyStringValue(str, key) {
-        var keyIndex = key.length + str.indexOf(key);
-        var comaIndex = str.indexOf(",");
-        var funcString = "";
-        if (str.indexOf(",", keyIndex) == -1) {
-          funcString = str.substring(keyIndex + 1);
-          console.log(funcString);
-          return funcString;
-        }
-        funcString = str.substring(keyIndex + 1, str.indexOf(",", keyIndex));
-        console.log(funcString);
-        return funcString;
-      }
-      getKeyStringValue("key:one,keys:two,keyz:three,test:abcdefgh", "test");
+      // function getKeyStringValue(str, key) {
+      //   var keyIndex = key.length + str.indexOf(key);
+      //   var comaIndex = str.indexOf(",");
+      //   var funcString = "";
+      //   if (str.indexOf(",", keyIndex) == -1) {
+      //     funcString = str.substring(keyIndex + 1);
+      //     console.log(funcString);
+      //     return funcString;
+      //   }
+      //   funcString = str.substring(keyIndex + 1, str.indexOf(",", keyIndex));
+      //   console.log(funcString);
+      //   return funcString;
+      // }
+      // getKeyStringValue("key:one,keys:two,keyz:three,test:abcdefgh", "test");
       //35
-      function getKeyAndValueString(str, key) {
-        var comaIndex = str.indexOf(",");
-        var funcString = "";
-        if (str.indexOf(",", str.indexOf(key)) == -1) {
-          funcString = str.substring(str.indexOf(key));
-          console.log(funcString);
-          return funcString;
-        }
-        funcString = str.substring(
-          str.indexOf(key),
-          str.indexOf(",", str.indexOf(key))
-        );
-        console.log(funcString);
-        return funcString;
-      }
-      getKeyAndValueString("key:one,keys:two,keyz:three,test:abcdefgh", "key");
+      // function getKeyAndValueString(str, key) {
+      //   var comaIndex = str.indexOf(",");
+      //   var funcString = "";
+      //   if (str.indexOf(",", str.indexOf(key)) == -1) {
+      //     funcString = str.substring(str.indexOf(key));
+      //     console.log(funcString);
+      //     return funcString;
+      //   }
+      //   funcString = str.substring(
+      //     str.indexOf(key),
+      //     str.indexOf(",", str.indexOf(key))
+      //   );
+      //   console.log(funcString);
+      //   return funcString;
+      // }
+      // getKeyAndValueString("key:one,keys:two,keyz:three,test:abcdefgh", "key");
       //36
-      function getValueLengthFromKey(str, key) {
-        var valLength = getKeyStringValue(str, key).length;
-        console.log(valLength);
-        return valLength;
-      }
-      getValueLengthFromKey(
-        "key:one,keys:two,keyz:three,test:abcdefgh",
-        "test"
-      );
+      // function getValueLengthFromKey(str, key) {
+      //   var valLength = getKeyStringValue(str, key).length;
+      //   console.log(valLength);
+      //   return valLength;
+      // }
+      // getValueLengthFromKey(
+      //   "key:one,keys:two,keyz:three,test:abcdefgh",
+      //   "test"
+      // );
 
       //37
-      function checkStringLength(str) {
-        if (str.length > 5) {
-          return console.log("long");
-        }
+      // function checkStringLength(str) {
+      //   if (str.length > 5) {
+      //     return console.log("long");
+      //   }
 
-        return console.log("short");
-      }
+      //   return console.log("short");
+      // }
       //38
       //   function checkIfStringLongOrShort(str){
       //     if(str.length>5){
