@@ -267,21 +267,21 @@
       //   }
       //   console.log(getUserAge());
       // helping function
-      function getAge(userDateRecevied) {
-        var userDate = userDateRecevied;
-        var myDate = new Date(userDate);
-        var currentDate = new Date();
-        var age = 0;
-        age = currentDate.getFullYear() - myDate.getFullYear();
-        if (
-          currentDate.getMonth() < myDate.getMonth() ||
-          (currentDate.getMonth() == myDate.getMonth() &&
-            currentDate.getDate() < myDate.getDate())
-        ) {
-          age--;
-        }
-        return age;
-      }
+      // function getAge(userDateRecevied) {
+      //   var userDate = userDateRecevied;
+      //   var myDate = new Date(userDate);
+      //   var currentDate = new Date();
+      //   var age = 0;
+      //   age = currentDate.getFullYear() - myDate.getFullYear();
+      //   if (
+      //     currentDate.getMonth() < myDate.getMonth() ||
+      //     (currentDate.getMonth() == myDate.getMonth() &&
+      //       currentDate.getDate() < myDate.getDate())
+      //   ) {
+      //     age--;
+      //   }
+      //   return age;
+      // }
       //30
       //   function ifAgeAbove18Enter(){
       //     var userBirthDate=prompt("Enter birth date YYYY-MM-DD");
@@ -308,7 +308,7 @@
       //   }
       //   makeRandomDate()
       //33
-      //   var myString = "door:100000,keys:v1l,keysss:valss";
+      var myString = "door:100000,keys:v1l,keysss:valss";
       //   function getValueLength(str) {
       //     var funcString = "";
       //     var startIndex = 0;
@@ -335,7 +335,20 @@
       //       return console.log(longestStr);
       //   }
       //   getValueLength(myString)
-      //34
+      //34 
+      function getKeyStringValue(str, key) {
+        var keyIndex = key.length + str.indexOf(key);
+        var comaIndex = str.indexOf(",");
+        var funcString = "";
+        if (str.indexOf(",", keyIndex) == -1) {
+          funcString = str.substring(keyIndex + 1);
+          console.log(funcString);
+        } else {
+          funcString = str.substring(keyIndex + 1, str.indexOf(",", keyIndex));
+          console.log(funcString);
+        }
+      }
+      getKeyStringValue("key:one,keys:two,keyz:three,test:abcdefgh", "test");
       //35
       //36
       //37
